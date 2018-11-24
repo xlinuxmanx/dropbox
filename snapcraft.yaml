@@ -1,0 +1,17 @@
+name: dropbox
+version: '61.4.95'
+summary: The Dropbox Nautilus Client for Linux
+description: Dropbox is a modern workspace designed to reduce busywork-so you can focus on the things that matter. Sync your files across computers and to the web.
+type: app
+grade: stable
+confinement: strict
+
+apps:
+  dropbox:
+    command: bin/dropbox
+
+parts:
+  dropbox:
+    build-packages: ["pkgconf", "libnautilus-extension-dev", "python-zbarpygtk", "python-docutils"]
+    source: https://linux.dropbox.com/packages/nautilus-dropbox-2018.11.08.tar.bz2
+    plugin: autotools
