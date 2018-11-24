@@ -19,25 +19,6 @@ parts:
       - python-docutils
     source: https://linux.dropbox.com/packages/nautilus-dropbox-2018.11.08.tar.bz2
     plugin: autotools
-
-  python2:
-    after: [dropbox]
-    source: https://www.python.org/ftp/python/2.7.15/Python-2.7.15.tgz
-    plugin: autotools
-
-  pygtk:
-#    build-packages:
-#      - libglib2.0-dev
-#      - libgtk2.0-dev
-#      - python-dev
-#      - python-gobject-2-dev
-#      - python-gtk2
-#      - python-gtk2-doc
-    after: [python2]
-#    source: http://deb.debian.org/debian/pool/main/p/pygtk/pygtk_2.24.0.orig.tar.gz
-#    plugin: autotools
-#    configflags: ["--prefix=/bin/python"]
-    source: .
-    plugin: dump
-    override-build:
-      apt install python-gtk2-dev -y
+    stage-packages:
+      - python-gtk2-dev
+      - python2.7
