@@ -8,7 +8,7 @@ confinement: strict
 
 apps:
   dropbox-client:
-    command: dropbox
+    command: bin/dropbox
     desktop: dropbox.desktop
 
 parts:
