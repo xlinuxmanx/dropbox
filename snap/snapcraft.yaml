@@ -19,6 +19,6 @@ parts:
       - dropbox.desktop
 
   dropbox:
-    build-packages: ["pkgconf", "libnautilus-extension-dev", "python-zbarpygtk", "python-docutils", "python2"]
+    build-packages: ["pkgconf", "libnautilus-extension-dev", "python-zbarpygtk", "python-docutils", "python2.7"]
     source: https://linux.dropbox.com/packages/nautilus-dropbox-2018.11.08.tar.bz2
     plugin: autotools
