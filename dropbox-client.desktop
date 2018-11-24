@@ -2,7 +2,7 @@
 Name=Dropbox
 GenericName=File Synchronizer
 Comment=Sync your files across computers and to the web
-Exec=dropbox start -i
+Exec=dropbox-client start -i
 Terminal=false
 Type=Application
 Icon=/share/icons/hicolor/256x256/apps/dropbox.png
