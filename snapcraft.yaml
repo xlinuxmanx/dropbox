@@ -8,7 +8,7 @@ confinement: strict
 
 apps:
   dropbox:
-    command: bin/dropbox
+    command: app-launch
 
 parts:
   dropbox:
