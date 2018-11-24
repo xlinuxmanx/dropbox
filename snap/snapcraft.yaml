@@ -16,7 +16,7 @@ parts:
     plugin: dump
     source: .
     prime:
-      - dropbox-client.desktop /usr/share/applications/dropbox-client.desktop
+      - share/applications/dropbox.desktop
 
   python2:
     after: [dropbox]
