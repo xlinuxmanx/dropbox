@@ -36,3 +36,4 @@ parts:
     after: [python2]
     source: http://deb.debian.org/debian/pool/main/p/pygtk/pygtk_2.24.0.orig.tar.gz
     plugin: autotools
+    configflags: ["--prefix=/bin/python"]
