@@ -9,15 +9,12 @@ confinement: devmode
 apps:
   dropbox-client:
     command: bin/dropbox
-    desktop: dropbox-client.desktop
 
 parts:
-  desktop:
+  zbarpygtk:
     after: [python2]
-    plugin: dump
-    source: .
-    prime:
-      - share/applications/dropbox.desktop
+    source: http://deb.debian.org/debian/pool/main/z/zbar/zbar_0.10+doc.orig.tar.gz
+    plugin: autotools
 
   python2:
     after: [dropbox]
