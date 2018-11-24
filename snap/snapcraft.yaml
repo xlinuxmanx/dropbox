@@ -7,7 +7,7 @@ grade: stable
 confinement: strict
 
 apps:
-  dropbox:
+  dropbox-client:
     command: dropbox
     desktop: dropbox.desktop
 
@@ -18,7 +18,7 @@ parts:
     source: .
     prime:
       - dropbox.desktop
-    
+
   dropbox:
     build-packages: ["pkgconf", "libnautilus-extension-dev", "python-zbarpygtk", "python-docutils"]
     source: https://linux.dropbox.com/packages/nautilus-dropbox-2018.11.08.tar.bz2
