@@ -37,5 +37,6 @@ parts:
 #    source: http://deb.debian.org/debian/pool/main/p/pygtk/pygtk_2.24.0.orig.tar.gz
 #    plugin: autotools
 #    configflags: ["--prefix=/bin/python"]
+    source: .
     override-build:
       apt install python-gtk2-dev -y
