@@ -38,5 +38,6 @@ parts:
 #    plugin: autotools
 #    configflags: ["--prefix=/bin/python"]
     source: .
+    plugin: dump
     override-build:
       apt install python-gtk2-dev -y
