@@ -26,14 +26,16 @@ parts:
     plugin: autotools
 
   pygtk:
-    build-packages:
-      - libglib2.0-dev
-      - libgtk2.0-dev
-      - python-dev
-      - python-gobject-2-dev
-      - python-gtk2
-      - python-gtk2-doc
+#    build-packages:
+#      - libglib2.0-dev
+#      - libgtk2.0-dev
+#      - python-dev
+#      - python-gobject-2-dev
+#      - python-gtk2
+#      - python-gtk2-doc
     after: [python2]
-    source: http://deb.debian.org/debian/pool/main/p/pygtk/pygtk_2.24.0.orig.tar.gz
-    plugin: autotools
-    configflags: ["--prefix=/bin/python"]
+#    source: http://deb.debian.org/debian/pool/main/p/pygtk/pygtk_2.24.0.orig.tar.gz
+#    plugin: autotools
+#    configflags: ["--prefix=/bin/python"]
+    override-build:
+      apt install python-gtk2-dev -y
