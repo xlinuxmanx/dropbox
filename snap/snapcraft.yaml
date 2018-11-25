@@ -9,6 +9,9 @@ confinement: devmode
 apps:
   dropbox-client:
     command: bin/dropbox
+    plugs:
+      - home
+      - network
 
 parts:
   dropbox:
@@ -18,6 +21,3 @@ parts:
     stage-packages:
       - python-gtk2-dev
       - python2.7
-    plugs:
-      - home
-      - network
