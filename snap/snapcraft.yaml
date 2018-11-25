@@ -12,13 +12,12 @@ apps:
 
 parts:
   dropbox:
-    build-packages:
-      - pkgconf
-      - libnautilus-extension-dev
-      - python-zbarpygtk
-      - python-docutils
-    source: https://linux.dropbox.com/packages/nautilus-dropbox-2018.11.08.tar.bz2
-    plugin: autotools
+    source: https://linux.dropbox.com/packages/ubuntu/dropbox_2018.11.08_amd64.deb
+    source-type: deb
+    plugin: dump
     stage-packages:
       - python-gtk2-dev
       - python2.7
+    plugs:
+      - home
+      - network
