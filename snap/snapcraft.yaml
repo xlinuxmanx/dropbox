@@ -32,3 +32,4 @@ parts:
       - python2.7
       - libpango1.0-0
       - libpangox-1.0-0
+      - python-gpg
