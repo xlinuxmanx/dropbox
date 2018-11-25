@@ -33,3 +33,7 @@ parts:
       - libpango1.0-0
       - libpangox-1.0-0
       - python-gpgme
+      - libgdk-pixbuf2.0-0
+      - libgdk-pixbuf2.0-bin
+      - libgdk-pixbuf2.0-common
+      - libgdk-pixbuf2.0-dev
