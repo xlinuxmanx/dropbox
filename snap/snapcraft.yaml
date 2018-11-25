@@ -11,7 +11,7 @@ architectures:
 
 apps:
   dropbox-client:
-    command: bin/dropbox
+    command: dropbox
     plugs:
       - home
       - network
