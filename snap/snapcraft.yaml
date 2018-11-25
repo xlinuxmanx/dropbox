@@ -16,6 +16,7 @@ apps:
       - home
       - network
       - network-bind
+      - browser-support
       - desktop
       - desktop-legacy
       - wayland
