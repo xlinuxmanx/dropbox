@@ -17,7 +17,6 @@ apps:
       - network
       - desktop
       - desktop-legacy
-      - x11
       - wayland
 
 parts:
