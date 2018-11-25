@@ -15,6 +15,7 @@ apps:
     plugs:
       - home
       - network
+      - network-bind
       - desktop
       - desktop-legacy
       - wayland
@@ -34,6 +35,6 @@ parts:
       - libpangox-1.0-0
       - python-gpgme
       - libgdk-pixbuf2.0-0
-      - libgdk-pixbuf2.0-bin
+      - gir1.2-gdkpixbuf-2.0
       - libgdk-pixbuf2.0-common
       - libgdk-pixbuf2.0-dev
