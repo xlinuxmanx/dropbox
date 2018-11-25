@@ -32,12 +32,4 @@ parts:
       - python2.7
       - libpango1.0-0
       - libpangox-1.0-0
-
-  python-gpg:
-    after: [dropbox]
-    source: http://launchpadlibrarian.net/384966897/python-gpg_1.10.0-1ubuntu2_amd64.deb
-    source-type: deb
-    plugin: dump
-    stage-packages:
-      - libc6
-      - libgpgme11
+      - python3-gpg
