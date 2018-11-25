@@ -18,9 +18,14 @@ apps:
 
 parts:
   dropbox:
+    build-packages:
+      - libpango1.0-0
+      - libpangox-1.0-0
     source: https://linux.dropbox.com/packages/ubuntu/dropbox_2018.11.08_amd64.deb
     source-type: deb
     plugin: dump
     stage-packages:
       - python-gtk2-dev
       - python2.7
+      - libpango1.0-0
+      - libpangox-1.0-0
