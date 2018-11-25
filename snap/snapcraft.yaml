@@ -10,7 +10,7 @@ architectures:
   - build-on: amd64
 
 apps:
-  dropbox:
+  dropbox-client:
     command: dropbox
     plugs:
       - home
