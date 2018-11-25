@@ -45,4 +45,3 @@ parts:
       - libcairo2
       - libglib2.0-0
       - libgtk2.0-0
-      - gpg
