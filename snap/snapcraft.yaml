@@ -42,3 +42,4 @@ parts:
       - libglib2.0-0
       - libgtk2.0-0
       - python3-gi
+      - libgtk-3-0
